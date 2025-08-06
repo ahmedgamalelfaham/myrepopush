@@ -1,6 +1,4 @@
-echo "🔠 Downloading MesloLGS NF (for reference only)..."
-FONT_DIR="/usr/share/fonts/nerd-fonts"
-mkdir -p "$FONT_DIR"
-cd "$FONT_DIR"
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Meslo.zip -O Meslo.zip
-unzip -o Meslo.zip
+wget https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/easy-term.omp.json \
+    -O /etc/ohmyposh/themes/paradox.omp.json
+echo 'eval "$(oh-my-posh init bash --config /etc/ohmyposh/themes/easy-term.omp.json)"' >> /root/.bashrc
+echo 'eval "$(oh-my-posh init bash --config /etc/ohmyposh/themes/easy-term.omp.json)"' >> /etc/skel/.bashrc
